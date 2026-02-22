@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 26px; fill: #FAFAFA; }
+      .subtitle { font-family: system-ui, sans-serif; font-weight: 500; font-size: 14px; fill: #A1A1AA; }
+      .feature-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 15px; fill: #FAFAFA; }
+      .feature-text { font-family: system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #A1A1AA; }
+      .check { font-size: 16px; fill: #10B981; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0A0A0A"/>
+
+  <!-- Grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+  </pattern>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" class="title">MIDL: AI-Powered Blockchain Terminal</text>
+  <text x="450" y="72" text-anchor="middle" class="subtitle">Natural language interface for Bitcoin + EVM operations</text>
+
+  <!-- Feature 1: Natural Language -->
+  <g transform="translate(50, 110)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">Natural Language</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">"Deploy an ERC20 called</text>
+    <text x="20" y="97" class="feature-text">BitcoinCoffee with 1M supply"</text>
+    <text x="125" y="130" text-anchor="middle" font-size="20" fill="#10B981">↓</text>
+    <text x="125" y="150" text-anchor="middle" class="feature-text" fill="#10B981">Contract deployed in seconds</text>
+  </g>
+
+  <!-- Feature 2: MCP Protocol -->
+  <g transform="translate(325, 110)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">MCP Protocol</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">Works with Claude Desktop, Cursor,</text>
+    <text x="20" y="97" class="feature-text">or any MCP-compatible client</text>
+    <rect x="20" y="110" width="70" height="25" rx="4" fill="#0A0A0A" stroke="#A78BFA" stroke-width="1"/>
+    <text x="55" y="127" text-anchor="middle" font-size="10" fill="#A78BFA">stdio</text>
+    <rect x="100" y="110" width="70" height="25" rx="4" fill="#0A0A0A" stroke="#22D3EE" stroke-width="1"/>
+    <text x="135" y="127" text-anchor="middle" font-size="10" fill="#22D3EE">HTTP</text>
+  </g>
+
+  <!-- Feature 3: Dual Layer -->
+  <g transform="translate(600, 110)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">Bitcoin + EVM Unified</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">One conversation for both layers</text>
+    <text x="20" y="97" class="feature-text">Query, transfer, bridge seamlessly</text>
+    <rect x="20" y="110" width="100" height="25" rx="4" fill="#0A0A0A" stroke="#F7931A" stroke-width="1"/>
+    <text x="70" y="127" text-anchor="middle" font-size="10" fill="#F7931A">Bitcoin L1</text>
+    <rect x="130" y="110" width="100" height="25" rx="4" fill="#0A0A0A" stroke="#627EEA" stroke-width="1"/>
+    <text x="180" y="127" text-anchor="middle" font-size="10" fill="#627EEA">EVM L2</text>
+  </g>
+
+  <!-- Feature 4: 27 Tools -->
+  <g transform="translate(50, 290)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">27 MCP Tools</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">9 categories: Network, Balance,</text>
+    <text x="20" y="97" class="feature-text">Bitcoin, Runes, Contract, Deploy,</text>
+    <text x="20" y="114" class="feature-text">Transfer, Bridge, Utility</text>
+    <text x="125" y="145" text-anchor="middle" class="feature-text" fill="#F97316">Full blockchain coverage</text>
+  </g>
+
+  <!-- Feature 5: Runes Support -->
+  <g transform="translate(325, 290)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">Runes ↔ ERC20</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">Query Rune balances</text>
+    <text x="20" y="97" class="feature-text">Transfer Runes on Bitcoin</text>
+    <text x="20" y="114" class="feature-text">Bridge to ERC20 tokens</text>
+    <text x="125" y="145" text-anchor="middle" class="feature-text" fill="#A78BFA">First-class Runes support</text>
+  </g>
+
+  <!-- Feature 6: Generative UI -->
+  <g transform="translate(600, 290)">
+    <rect width="250" height="160" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#10B981" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" class="check">✓</text>
+    <text x="55" y="35" class="feature-title">Generative UI</text>
+    <line x1="15" y1="55" x2="235" y2="55" stroke="#27272A" stroke-width="1"/>
+    <text x="20" y="80" class="feature-text">Rich visual cards, not plain text</text>
+    <text x="20" y="97" class="feature-text">Balance cards, TX receipts,</text>
+    <text x="20" y="114" class="feature-text">Rune portfolios, deploy results</text>
+    <text x="125" y="145" text-anchor="middle" class="feature-text" fill="#22D3EE">Every tool has a UI component</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="250" y="465" width="400" height="25" rx="6" fill="#18181B" stroke="#F97316" stroke-width="1"/>
+  <text x="450" y="483" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#F97316" font-weight="600">Built for VibeHack 2026</text>
+</svg>

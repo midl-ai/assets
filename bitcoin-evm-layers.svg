@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 24px; fill: #FAFAFA; }
+      .subtitle { font-family: system-ui, sans-serif; font-weight: 500; font-size: 14px; fill: #A1A1AA; }
+      .layer-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 18px; fill: #FAFAFA; }
+      .box-title { font-family: system-ui, sans-serif; font-weight: 600; font-size: 13px; fill: #FAFAFA; }
+      .box-text { font-family: system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #A1A1AA; }
+      .highlight { font-family: monospace; font-weight: 600; font-size: 11px; }
+    </style>
+    <marker id="arrow-down" markerWidth="10" markerHeight="10" refX="5" refY="10" orient="auto">
+      <path d="M0,0 L10,0 L5,10 z" fill="#F97316"/>
+    </marker>
+    <marker id="arrow-up" markerWidth="10" markerHeight="10" refX="5" refY="0" orient="auto">
+      <path d="M0,10 L10,10 L5,0 z" fill="#F97316"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="550" fill="#0A0A0A"/>
+
+  <!-- Grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+  </pattern>
+  <rect width="900" height="550" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="title">MIDL Dual-Layer Architecture</text>
+  <text x="450" y="65" text-anchor="middle" class="subtitle">Bitcoin L1 Security + EVM L2 Smart Contracts</text>
+
+  <!-- Bitcoin L1 Layer -->
+  <g transform="translate(50, 100)">
+    <rect width="350" height="200" rx="16" fill="#18181B" stroke="#F7931A" stroke-width="3"/>
+
+    <!-- Bitcoin logo area -->
+    <circle cx="40" cy="35" r="20" fill="#F7931A" opacity="0.2"/>
+    <text x="40" y="42" text-anchor="middle" font-size="20" fill="#F7931A">₿</text>
+    <text x="75" y="40" class="layer-title" fill="#F7931A">Bitcoin L1</text>
+    <text x="280" y="35" class="box-text">Settlement Layer</text>
+
+    <line x1="20" y1="60" x2="330" y2="60" stroke="#27272A" stroke-width="1"/>
+
+    <!-- UTXOs -->
+    <g transform="translate(20, 75)">
+      <rect width="145" height="55" rx="8" fill="#0A0A0A" stroke="#F7931A" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" class="box-title">UTXOs</text>
+      <text x="72" y="40" text-anchor="middle" class="box-text">Unspent outputs</text>
+    </g>
+
+    <!-- Runes -->
+    <g transform="translate(185, 75)">
+      <rect width="145" height="55" rx="8" fill="#0A0A0A" stroke="#A78BFA" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" class="box-title" fill="#A78BFA">Runes</text>
+      <text x="72" y="40" text-anchor="middle" class="box-text">Bitcoin-native tokens</text>
+    </g>
+
+    <!-- Native BTC -->
+    <g transform="translate(20, 140)">
+      <rect width="310" height="45" rx="8" fill="#0A0A0A" stroke="#27272A" stroke-width="1"/>
+      <text x="155" y="20" text-anchor="middle" class="box-text">Native BTC (satoshis) · 1 BTC = 100,000,000 sats</text>
+      <text x="155" y="35" text-anchor="middle" class="highlight" fill="#F7931A">@midl/node</text>
+    </g>
+  </g>
+
+  <!-- Bridge in the middle -->
+  <g transform="translate(425, 150)">
+    <rect width="50" height="100" rx="8" fill="#18181B" stroke="#F97316" stroke-width="2"/>
+
+    <!-- Up arrow -->
+    <path d="M 25 20 L 25 45" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-up)"/>
+    <text x="25" y="55" text-anchor="middle" font-size="10" fill="#F97316">↑</text>
+
+    <!-- Down arrow -->
+    <path d="M 25 80 L 25 55" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-down)"/>
+    <text x="25" y="95" text-anchor="middle" font-size="10" fill="#F97316">↓</text>
+  </g>
+
+  <!-- Bridge labels -->
+  <text x="450" y="130" text-anchor="middle" class="box-title" fill="#F97316">Bridge</text>
+  <text x="450" y="280" text-anchor="middle" class="box-text">Deposit / Withdraw</text>
+
+  <!-- EVM L2 Layer -->
+  <g transform="translate(500, 100)">
+    <rect width="350" height="200" rx="16" fill="#18181B" stroke="#627EEA" stroke-width="3"/>
+
+    <!-- EVM logo area -->
+    <circle cx="40" cy="35" r="20" fill="#627EEA" opacity="0.2"/>
+    <text x="40" y="44" text-anchor="middle" font-size="16" fill="#627EEA">◊</text>
+    <text x="75" y="40" class="layer-title" fill="#627EEA">EVM L2</text>
+    <text x="290" y="35" class="box-text">Execution Layer</text>
+
+    <line x1="20" y1="60" x2="330" y2="60" stroke="#27272A" stroke-width="1"/>
+
+    <!-- Smart Contracts -->
+    <g transform="translate(20, 75)">
+      <rect width="145" height="55" rx="8" fill="#0A0A0A" stroke="#627EEA" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" class="box-title">Smart Contracts</text>
+      <text x="72" y="40" text-anchor="middle" class="box-text">Solidity / ERC20</text>
+    </g>
+
+    <!-- Bridged Runes -->
+    <g transform="translate(185, 75)">
+      <rect width="145" height="55" rx="8" fill="#0A0A0A" stroke="#A78BFA" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" class="box-title" fill="#A78BFA">Rune → ERC20</text>
+      <text x="72" y="40" text-anchor="middle" class="box-text">Bridged tokens</text>
+    </g>
+
+    <!-- BTC 18 decimals -->
+    <g transform="translate(20, 140)">
+      <rect width="310" height="45" rx="8" fill="#0A0A0A" stroke="#27272A" stroke-width="1"/>
+      <text x="155" y="20" text-anchor="middle" class="box-text">BTC (18 decimals) · 1 sat = 10^10 wei</text>
+      <text x="155" y="35" text-anchor="middle" class="highlight" fill="#627EEA">@midl/viem</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Key Features -->
+  <g transform="translate(50, 340)">
+    <rect width="800" height="180" rx="16" fill="#18181B" stroke="#27272A" stroke-width="2"/>
+
+    <text x="400" y="30" text-anchor="middle" class="layer-title">Key Operations</text>
+    <line x1="30" y1="50" x2="770" y2="50" stroke="#27272A" stroke-width="1"/>
+
+    <!-- Bridge BTC -->
+    <g transform="translate(30, 70)">
+      <rect width="230" height="80" rx="8" fill="#0A0A0A" stroke="#F97316" stroke-width="1"/>
+      <text x="115" y="25" text-anchor="middle" class="box-title" fill="#F97316">Bridge BTC</text>
+      <text x="115" y="45" text-anchor="middle" class="box-text">midl_bridge_btc_to_evm</text>
+      <text x="115" y="62" text-anchor="middle" class="box-text">midl_bridge_evm_to_btc</text>
+    </g>
+
+    <!-- Bridge Runes -->
+    <g transform="translate(285, 70)">
+      <rect width="230" height="80" rx="8" fill="#0A0A0A" stroke="#A78BFA" stroke-width="1"/>
+      <text x="115" y="25" text-anchor="middle" class="box-title" fill="#A78BFA">Bridge Runes</text>
+      <text x="115" y="45" text-anchor="middle" class="box-text">midl_bridge_rune_to_erc20</text>
+      <text x="115" y="62" text-anchor="middle" class="box-text">midl_bridge_erc20_to_rune</text>
+    </g>
+
+    <!-- Query Both -->
+    <g transform="translate(540, 70)">
+      <rect width="230" height="80" rx="8" fill="#0A0A0A" stroke="#22D3EE" stroke-width="1"/>
+      <text x="115" y="25" text-anchor="middle" class="box-title" fill="#22D3EE">Query Both Layers</text>
+      <text x="115" y="45" text-anchor="middle" class="box-text">midl_get_btc_balance (L1)</text>
+      <text x="115" y="62" text-anchor="middle" class="box-text">midl_get_evm_balance (L2)</text>
+    </g>
+  </g>
+</svg>

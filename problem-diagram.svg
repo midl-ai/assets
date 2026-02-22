@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 26px; fill: #FAFAFA; }
+      .problem-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 15px; fill: #FAFAFA; }
+      .problem-text { font-family: system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #A1A1AA; }
+      .code { font-family: monospace; font-size: 10px; fill: #71717A; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#0A0A0A"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+  </pattern>
+  <rect width="900" height="400" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" class="title">The Problem with Blockchain Development</text>
+
+  <!-- Problem 1: Complex SDKs -->
+  <g transform="translate(50, 80)">
+    <rect width="250" height="250" rx="12" fill="#18181B" stroke="#27272A" stroke-width="2"/>
+
+    <!-- X icon -->
+    <circle cx="125" cy="55" r="25" fill="#0A0A0A" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 113 43 L 137 67 M 137 43 L 113 67" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="125" y="105" text-anchor="middle" class="problem-title">Complex SDKs</text>
+
+    <text x="125" y="135" text-anchor="middle" class="problem-text">Learn viem, ethers, bitcoinjs...</text>
+    <text x="125" y="155" text-anchor="middle" class="problem-text">Configure providers, chains</text>
+    <text x="125" y="175" text-anchor="middle" class="problem-text">Handle gas, nonces, encoding</text>
+    <text x="125" y="195" text-anchor="middle" class="problem-text">Different API for each chain</text>
+
+    <!-- Code block -->
+    <rect x="25" y="210" width="200" height="30" rx="6" fill="#0A0A0A" stroke="#27272A" stroke-width="1"/>
+    <text x="125" y="230" text-anchor="middle" class="code">await client.sendTransaction({...})</text>
+  </g>
+
+  <!-- Problem 2: No Natural Language -->
+  <g transform="translate(325, 80)">
+    <rect width="250" height="250" rx="12" fill="#18181B" stroke="#27272A" stroke-width="2"/>
+
+    <!-- X icon -->
+    <circle cx="125" cy="55" r="25" fill="#0A0A0A" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 113 43 L 137 67 M 137 43 L 113 67" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="125" y="105" text-anchor="middle" class="problem-title">No Natural Language</text>
+
+    <text x="125" y="135" text-anchor="middle" class="problem-text">Can't just "send 0.1 BTC"</text>
+    <text x="125" y="155" text-anchor="middle" class="problem-text">Must write code for everything</text>
+    <text x="125" y="175" text-anchor="middle" class="problem-text">No AI assistant integration</text>
+    <text x="125" y="195" text-anchor="middle" class="problem-text">Steep learning curve</text>
+
+    <!-- Code block -->
+    <rect x="25" y="210" width="200" height="30" rx="6" fill="#0A0A0A" stroke="#27272A" stroke-width="1"/>
+    <text x="125" y="230" text-anchor="middle" class="code">// TODO: figure this out</text>
+  </g>
+
+  <!-- Problem 3: Multi-Chain Complexity -->
+  <g transform="translate(600, 80)">
+    <rect width="250" height="250" rx="12" fill="#18181B" stroke="#27272A" stroke-width="2"/>
+
+    <!-- X icon -->
+    <circle cx="125" cy="55" r="25" fill="#0A0A0A" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 113 43 L 137 67 M 137 43 L 113 67" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="125" y="105" text-anchor="middle" class="problem-title">Multi-Chain Complexity</text>
+
+    <text x="125" y="135" text-anchor="middle" class="problem-text">Bitcoin ≠ EVM patterns</text>
+    <text x="125" y="155" text-anchor="middle" class="problem-text">UTXOs vs Account model</text>
+    <text x="125" y="175" text-anchor="middle" class="problem-text">Bridging is manual work</text>
+    <text x="125" y="195" text-anchor="middle" class="problem-text">Runes need special handling</text>
+
+    <!-- Stack illustration -->
+    <rect x="70" y="210" width="110" height="15" rx="4" fill="#F7931A" stroke="#27272A" stroke-width="1"/>
+    <text x="125" y="222" text-anchor="middle" font-size="9" fill="#000">Bitcoin</text>
+    <rect x="70" y="227" width="110" height="15" rx="4" fill="#627EEA" stroke="#27272A" stroke-width="1"/>
+    <text x="125" y="239" text-anchor="middle" font-size="9" fill="#FFF">EVM</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <rect x="250" y="350" width="400" height="35" rx="8" fill="#18181B" stroke="#F97316" stroke-width="2"/>
+  <text x="450" y="373" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#F97316" font-weight="700">We built MIDL to fix ALL of this.</text>
+</svg>

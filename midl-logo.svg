@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- MIDL Logo - Terminal + Blockchain fusion -->
+
+  <!-- Outer glow ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#glowGradient)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Main circle background -->
+  <circle cx="100" cy="100" r="80" fill="#0A0A0A" stroke="#F97316" stroke-width="3"/>
+
+  <!-- Inner ring - representing dual layers -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.6"/>
+
+  <!-- Terminal bracket left -->
+  <path d="M 55 70 L 45 100 L 55 130" stroke="#F97316" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Terminal bracket right -->
+  <path d="M 145 70 L 155 100 L 145 130" stroke="#F97316" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- AI/cursor blinking line -->
+  <rect x="70" y="95" width="60" height="10" rx="2" fill="#22D3EE"/>
+
+  <!-- Blockchain nodes - small circles -->
+  <circle cx="75" cy="65" r="6" fill="#A78BFA"/>
+  <circle cx="125" cy="65" r="6" fill="#A78BFA"/>
+  <circle cx="75" cy="135" r="6" fill="#A78BFA"/>
+  <circle cx="125" cy="135" r="6" fill="#A78BFA"/>
+
+  <!-- Connection lines between nodes -->
+  <line x1="75" y1="65" x2="125" y2="65" stroke="#A78BFA" stroke-width="1.5" opacity="0.4"/>
+  <line x1="75" y1="135" x2="125" y2="135" stroke="#A78BFA" stroke-width="1.5" opacity="0.4"/>
+  <line x1="75" y1="65" x2="75" y2="135" stroke="#A78BFA" stroke-width="1.5" opacity="0.4"/>
+  <line x1="125" y1="65" x2="125" y2="135" stroke="#A78BFA" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+</svg>
